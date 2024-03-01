@@ -35,22 +35,22 @@ public class Player extends Entity implements Keyboardable {
      */
     @Override
     public void pressTouch(int reference) {
-        if (reference == 1) {
+        if (reference == 0) {
             x++;
             return;
         }
 
-        if (reference == 2) {
+        if (reference == 1) {
             x--;
             return;
         }
 
-        if (reference == 3) {
+        if (reference == 2) {
             y++;
             return;
         }
 
-        if (reference == 4) {
+        if (reference == 3) {
             y--;
         }
     }

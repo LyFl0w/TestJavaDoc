@@ -1,6 +1,8 @@
 package net.lyflow.testjavadoc;
 
 import net.lyflow.testjavadoc.person.Player;
+import net.lyflow.testjavadoc.person.Zombie;
+
 import java.util.Random;
 
 /**
@@ -16,17 +18,23 @@ public class Main {
     public static void main(String[] args) {
         // Creating a new player object with ID 1 and name "md5"
         final Player player = new Player(1, "md5");
+        final Zombie zombie = new Zombie(2, "zombieee");
 
-        // Describing the player
+        // Describing the player and the zombie
         player.describe();
+        System.out.println();
+        zombie.describe();
+        System.out.println();
 
         // Creating a new random object for generating random keyboard inputs
         final Random random = new Random();
 
         // Infinite loop to continuously generate random keyboard inputs and update the player's position
-        while (true) {
+        int totalRef = 0;
+        while (totalRef <= 20) {
             // Generating a random keyboard input (0, 1, 2, or 3)
-            int reference = random.nextInt(4);
+            totalRef ++;
+            final int reference = random.nextInt(4);
 
             // Updating the player's position based on the generated keyboard input
             player.pressTouch(reference);
