@@ -1,4 +1,4 @@
-package net.lyflow.testjavadoc.person;
+package net.lyflow.testjavadoc.entity;
 
 
 

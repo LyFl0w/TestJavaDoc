@@ -1,4 +1,4 @@
-package net.lyflow.testjavadoc.person;
+package net.lyflow.testjavadoc.entity;
 
 /**
  * The {@code Zombie} class represents a zombie entity in a 2D space.

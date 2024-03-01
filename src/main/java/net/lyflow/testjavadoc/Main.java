@@ -1,7 +1,8 @@
 package net.lyflow.testjavadoc;
 
-import net.lyflow.testjavadoc.person.Player;
-import net.lyflow.testjavadoc.person.Zombie;
+import net.lyflow.testjavadoc.entity.Creeper;
+import net.lyflow.testjavadoc.entity.Player;
+import net.lyflow.testjavadoc.entity.Zombie;
 
 import java.util.Random;
 
@@ -19,11 +20,14 @@ public class Main {
         // Creating a new player object with ID 1 and name "md5"
         final Player player = new Player(1, "md5");
         final Zombie zombie = new Zombie(2, "zombieee");
+        final Creeper creeper = new Creeper(3, "creeeper");
 
         // Describing the player and the zombie
         player.describe();
         System.out.println();
         zombie.describe();
+        System.out.println();
+        creeper.describe();
         System.out.println();
 
         // Creating a new random object for generating random keyboard inputs

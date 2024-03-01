@@ -1,4 +1,4 @@
-package net.lyflow.testjavadoc.person;
+package net.lyflow.testjavadoc.entity;
 
 /**
  * The {@code Player} class represents a player entity in a 2D space.

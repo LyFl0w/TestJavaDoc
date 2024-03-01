@@ -1,4 +1,4 @@
-package net.lyflow.testjavadoc.person;
+package net.lyflow.testjavadoc.entity;
 
 /**
  * The {@code Keyboardable} interface represents an object that can respond to keyboard inputs.
